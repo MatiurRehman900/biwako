@@ -2385,7 +2385,8 @@ video {
     background-image: url(./../img/main/main03_bg.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
 }
 
 @media screen and (max-width:1024px) {
@@ -2669,7 +2670,7 @@ video {
 }
 
 .main04 {
-    background-image: url(./../img/main/main04_bg.jpg);
+    background-image: url(./../img/main/main04_bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
