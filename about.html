@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Biwako</title>
+
+  <link rel="stylesheet" id="destyle-css"
+    href="./assets/wp/wp-content/themes/isuzu-logistics/css/destyle_ver%3D6.1.8.css" type="text/css" media="all">
+  <link rel="stylesheet" id="my-style-css"
+    href="./assets/wp/wp-content/themes/isuzu-logistics/css/style.min_ver%3D1756352905.css" type="text/css" media="all">
+  <link rel="stylesheet" id="swiper-style-css"
+    href="./F9S3WNJ2wc53.com/swiper%407.4.1/swiper-bundle.min_ver%3D6.1.8.css" type="text/css" media="all">
+  <script type="text/javascript" src="./assets/wp/wp-includes/js/jquery/jquery.min_ver%3D3.6.1.js"
+    id="jquery-core-js"></script>
+  <script type="text/javascript" src="./assets/wp/wp-includes/js/jquery/jquery-migrate.min_ver%3D3.3.2.js"
+    id="jquery-migrate-js"></script>
+
+  <style>
+    .about-hero {
+      background: linear-gradient(135deg, #ff6900 0%, #ff8533 100%);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .about-content {
+      padding: 100px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .about-section {
+      margin-bottom: 60px;
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      color: #ff6900;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .value-item {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      border-left: 5px solid #ff6900;
+    }
+
+    .value-item h3 {
+      color: #ff6900;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .stats-section {
+      background: #f8f9fa;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #ff6900;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 1.1rem;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .languages-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .language-item {
+      background: linear-gradient(135deg, #ff6900, #ff8533);
+      color: white;
+      padding: 15px 25px;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(255, 105, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .language-item:hover {
+      transform: translateY(-3px);
+    }
+
+    .why-choose {
+      background: white;
+      padding: 60px 0;
+    }
+
+    .why-choose h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #ff6900;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+
+    .reason-card {
+      background: #f8f9fa;
+      padding: 35px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+      border-left: 6px solid #ff6900;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .reason-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 30px rgba(255, 105, 0, 0.2);
+    }
+
+    .reason-card h3 {
+      color: #ff6900;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .reason-card p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .reason-card ul {
+      margin: 15px 0 15px 25px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .reason-card ul li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .reason-card ul li::marker {
+      color: #ff6900;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .team-card {
+      background: linear-gradient(135deg, #ff6900, #ff8533);
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(255, 105, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-card h4 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .team-card p {
+      color: white;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <h2 style="font-weight: 900; font-size: 34px; color: #ff6900;">Biwako</h2>
+          </a>
+        </h1>
+        <nav class="_pc">
+          <ul class="header__nav">
+            <li class="subNav--hover">
+              <a href="index.html">Home</a>
+            </li>
+            <!-- <li class="subNav--hover">
+              <a href="">Services</a>
+              <div class="subNav">
+                <div class="container subNav__inner">
+                  <div class="subNav__head">
+                    <p class="subNav__ttl">Services</p>
+                    <div class="subNav__img _logisticssolution"></div>
+                  </div>
+                  <ul class="subNav__list">
+                    <li class="subNav__item">
+                      <a href="#" class="subNav__link">
+                        <span class="subNav__icon"><span class="subNav__icon--box"><span
+                              class="subNav__icon--arrow"></span></span></span>
+                        <p class="subNav__txt">Vehicle Procurement</p>
+                      </a>
+                    </li>
+                    <li class="subNav__item">
+                      <a href="#" class="subNav__link">
+                        <span class="subNav__icon"><span class="subNav__icon--box"><span
+                              class="subNav__icon--arrow"></span></span></span>
+                        <p class="subNav__txt">Car Dismantling</p>
+                      </a>
+                    </li>
+                    <li class="subNav__item">
+                      <a href="#" class="subNav__link">
+                        <span class="subNav__icon"><span class="subNav__icon--box"><span
+                              class="subNav__icon--arrow"></span></span></span>
+                        <p class="subNav__txt">Part Storage</p>
+                      </a>
+                    </li>
+                    <li class="subNav__item">
+                      <a href="#" class="subNav__link">
+                        <span class="subNav__icon"><span class="subNav__icon--box"><span
+                              class="subNav__icon--arrow"></span></span></span>
+                        <p class="subNav__txt">Container Shipping</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li> -->
+            <li class="subNav--hover">
+              <a href="about.html" style="color: #ff6900;">About us</a>
+            </li>
+            <li class="subNav--hover">
+              <a href="business-flow.html">Business Flow</a>
+            </li>
+            <li class="_recruit">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Main Content -->
+    <section class="about-content">
+      <div class="container">
+        <!-- Company Overview -->
+        <div class="about-section">
+        <center>
+          <h2>About Us</h2>
+        </center>
+          <p>Founded in 2003, our company began its journey in the used car export business. In the early years, we primarily exported vehicles to Russia, Pakistan, the UK, UAE, and other international markets. As our network and expertise expanded, we identified a growing global demand for high-quality used auto parts.</p>
+          <p>Over time, we gradually diversified from complete car exports into the used automotive parts industry. Today, we specialize in the bulk export of used auto parts and proudly operate as a reliable supplier to markets such as the Philippines, Pakistan, UAE, Russia, Africa, and Latin American countries.</p>
+          <p>With over two decades of industry experience, we have built strong partnerships, gained extensive market knowledge, and established ourselves as a trusted name in the global auto parts export business.</p>
+          <p>We are a multilingual team, capable of communicating in: <strong>English, Japanese, Russian, Urdu, and Pashto</strong>, enabling us to serve a diverse international customer base effectively.</p>
+          <p>Our commitment to quality, reliability, and customer satisfaction continues to drive our growth as we deliver value and trusted automotive solutions around the world.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+
+        <div class="reason-card">
+          <h3>1. Strategic Location</h3>
+          <p>Our yard is located in Toyama Prefecture, close to three major ports. We are:</p>
+          <ul>
+            <li>Only 5 minutes from Toyama Shinko Port</li>
+            <li>20 minutes from Toyama Iwase Port</li>
+            <li>25 minutes from Toyama Fushiki Port</li>
+          </ul>
+          <p>This prime location makes us one of the most convenient and efficient hubs for exports to Russia and other international destinations. Our proximity to multiple ports ensures faster loading, reduced transportation costs, and timely shipments.</p>
+        </div>
+
+        <div class="reason-card">
+          <h3>2. Strong and Smooth Supply Chain</h3>
+          <p>Thanks to our long-term relationships with local car dealers and our memberships in major Japanese auto auctions, we maintain a strong and reliable supply chain. We can source all types of vehicles, including:</p>
+          <ul>
+            <li>Passenger cars</li>
+            <li>Vans</li>
+            <li>Trucks</li>
+            <li>Heavy machinery</li>
+          </ul>
+          <p>This ensures a consistent and wide range of inventory for our customers worldwide.</p>
+        </div>
+
+        <div class="reason-card">
+          <h3>3. Multilingual Staff</h3>
+          <p>Our team consists of multilingual professionals who can communicate seamlessly with customers from different regions. We speak: <strong>English, Japanese, Russian, Urdu, and Pashto</strong>.</p>
+          <p>This helps us provide better support, clear communication, and smooth coordination throughout the buying and shipping process.</p>
+        </div>
+
+        <div class="reason-card">
+          <h3>4. Licensed and Authorized</h3>
+          <p>We are a fully licensed and registered exporter in Japan. Our official licenses and certifications allow us to:</p>
+          <ul>
+            <li>Participate in all major Japanese auto auctions</li>
+            <li>Legally dismantle and recycle Japanese vehicles</li>
+            <li>Handle chlorofluorocarbon (CFC) removal, airbag dismantling, vehicle scrapping, and parts dismantling in compliance with Japanese regulations</li>
+          </ul>
+          <p>These certifications ensure that our operations are safe, environmentally responsible, and fully aligned with Japan's strict automotive recycling standards.</p>
+        </div>
+
+        <div class="reason-card">
+          <h3>5. Professional Team</h3>
+          <div class="team-grid">
+            <div class="team-card">
+              <h4>Japanese Staff</h4>
+              <p>Our Japanese staff efficiently handle local buying of cars, parts, machinery, and trucks.</p>
+            </div>
+            <div class="team-card">
+              <h4>Multinational Staff</h4>
+              <p>Multinational team dealing with international client.</p>
+            </div>
+            <div class="team-card">
+              <h4>Dispentaling Staff</h4>
+              <p>We have hired 4 to 5 team members, each with over 10 years of experience, to ensure that all parts are carefully dismantled and delivered to you without any damage.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- /.common-contact -->
+  <footer class="footer">
+    <div class="footer__body">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__nav">
+            <li class="footer__item">
+              <div class="footer__head _has-child">
+                <a href="" class="footer__link"><span>Services</span></a>
+                <div class="acd-btn _tb-sp"></div>
+              </div>
+              <ul class="child-menu acd-body">
+                <li class="child-menu__item">
+                  <a  class="child-menu__link"><span>Vehicle
+                      Procurement</span></a>
+                </li>
+                <li class="child-menu__item">
+                  <a  class="child-menu__link"><span>Car
+                      Dismantling</span></a>
+                </li>
+                <li class="child-menu__item">
+                  <a  class="child-menu__link"><span>Part
+                      Storage</span></a>
+                </li>
+                <li class="child-menu__item">
+                  <a  class="child-menu__link"><span>Container
+                      Shipping</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__item">
+                <a href="https://assets/office" class="footer__link"><span>Office Locations</span></a>
+            </li>
+            <li class="footer__item">
+              <div class="footer__head">
+                <a href="https://assets/contact" class="footer__link">
+                  <span>Contact Us</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="footer__contact">
+            <h3>Contact Information</h3>
+            <p><strong>Address:</strong> Shichiminakano 198-2, Imizu City, Toyama-ken, 933-0253, JAPAN</p>
+            <p><strong>Phone:</strong> +81-90-3052-8856</p>
+            <p><strong>Email:</strong> <a href="mailto:rashidjap@yahoo.com">rashidjap@yahoo.com</a></p>
+            <p><strong>Business Hours:</strong> Monday-Friday 9:00 AM - 6:00 PM JST</p>
+          </div>
+          <div class="footer__social">
+            <h3>Social Media</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/japantrektoyama" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://www.instagram.com/japantrek.co.jp" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="_tb-sp">
+          <ul class="footer__sub-nav">
+            <li><a href="https://assets/sitemap">Sitemap</a></li>
+            <li><a href="https://assets/info_security">Information Security Policy</a></li>
+            <li><a href="https://assets/info_security#privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="_pc">
+            <ul class="footer__sub-nav">
+              <li><a href="https://assets/sitemap">Sitemap</a></li>
+              <li><a href="https://assets/info_security">Information Security Policy</a></li>
+              <li><a href="https://assets/info_security#privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <p class="footer__copy">© 2022
+            <script>new Date().getFullYear() > 2022 && document.write(" " + new Date().getFullYear());</script>
+            Biwako International Co., Ltd.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

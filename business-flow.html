@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export Business Flow - Biwako</title>
+
+  <link rel="stylesheet" id="destyle-css"
+    href="./assets/wp/wp-content/themes/isuzu-logistics/css/destyle_ver%3D6.1.8.css" type="text/css" media="all">
+  <link rel="stylesheet" id="my-style-css"
+    href="./assets/wp/wp-content/themes/isuzu-logistics/css/style.min_ver%3D1756352905.css" type="text/css" media="all">
+  <link rel="stylesheet" id="swiper-style-css"
+    href="./F9S3WNJ2wc53.com/swiper%407.4.1/swiper-bundle.min_ver%3D6.1.8.css" type="text/css" media="all">
+  <script type="text/javascript" src="./assets/wp/wp-includes/js/jquery/jquery.min_ver%3D3.6.1.js"
+    id="jquery-core-js"></script>
+  <script type="text/javascript" src="./assets/wp/wp-includes/js/jquery/jquery-migrate.min_ver%3D3.3.2.js"
+    id="jquery-migrate-js"></script>
+
+  <style>
+    .flow-hero {
+      background: linear-gradient(135deg, #ff6900 0%, #ff8533 100%);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .flow-hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .flow-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .flow-content {
+      padding: 80px 0;
+      background: #f8f9fa;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .flow-steps {
+      display: grid;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .flow-step {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+      border-left: 6px solid #ff6900;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .flow-step:hover {
+      transform: translateX(10px);
+      box-shadow: 0 5px 30px rgba(255, 105, 0, 0.2);
+    }
+
+    .flow-step-number {
+      position: absolute;
+      top: -20px;
+      left: 30px;
+      background: linear-gradient(135deg, #ff6900, #ff8533);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: 900;
+      box-shadow: 0 4px 15px rgba(255, 105, 0, 0.4);
+    }
+
+    .flow-step h3 {
+      color: #ff6900;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-weight: 700;
+    }
+
+    .flow-step p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #333;
+      margin: 0;
+    }
+
+    .flow-arrow {
+      text-align: center;
+      color: #ff6900;
+      font-size: 2.5rem;
+      margin: -10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="index.html">
+            <h2 style="font-weight: 900; font-size: 34px; color: #ff6900;">Biwako</h2>
+          </a>
+        </h1>
+        <nav class="_pc">
+          <ul class="header__nav">
+            <li class="subNav--hover">
+              <a href="index.html">Home</a>
+            </li>
+            <!-- <li class="subNav--hover">
+              <a href="">Services</a>
+              <div class="subNav">
+                <div class="container subNav__inner">
+                  <div class="subNav__head">
+                    <p class="subNav__ttl">Services</p>
+                    <div class="subNav__img _logisticssolution"></div>
+                  </div>
+                  <ul class="subNav__list">
+                    <li class="subNav__item">
+                      <a href="#" class="subNav__link">
+                        <span class="subNav__icon"><span class="subNav__icon--box"><span
+                              class="subNav__icon--arrow"></span></span></span>
+                        <p class="subNav__txt">Vehicle Procurement</p>
+                      </a>
+                    </li>
+                    <li class="subNav__item">
+                      <a href="#" class="subNav__link">
+                        <span class="subNav__icon"><span class="subNav__icon--box"><span
+                              class="subNav__icon--arrow"></span></span></span>
+                        <p class="subNav__txt">Car Dismantling</p>
+                      </a>
+                    </li>
+                    <li class="subNav__item">
+                      <a href="#" class="subNav__link">
+                        <span class="subNav__icon"><span class="subNav__icon--box"><span
+                              class="subNav__icon--arrow"></span></span></span>
+                        <p class="subNav__txt">Part Storage</p>
+                      </a>
+                    </li>
+                    <li class="subNav__item">
+                      <a href="#" class="subNav__link">
+                        <span class="subNav__icon"><span class="subNav__icon--box"><span
+                              class="subNav__icon--arrow"></span></span></span>
+                        <p class="subNav__txt">Container Shipping</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li> -->
+            <li class="subNav--hover">
+              <a href="about.html">About us</a>
+            </li>
+            <li class="subNav--hover">
+              <a href="business-flow.html" style="color: #ff6900;">Business Flow</a>
+            </li>
+            <li class="_recruit">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="flow-hero">
+      <div class="container">
+        <h1>Export Business Flow</h1>
+        <p>Our streamlined process ensures quality, efficiency, and timely delivery from order to shipment</p>
+      </div>
+    </section>
+
+    <!-- Flow Content -->
+    <section class="flow-content">
+      <div class="container">
+        <div class="flow-steps">
+
+          <div class="flow-step">
+            <div class="flow-step-number">1</div>
+            <h3>Receiving Orders</h3>
+            <p>We get customer orders and check all details to make sure everything is correct.</p>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <div class="flow-step-number">2</div>
+            <h3>Arranging Cars & Parts</h3>
+            <p>We collect the required cars and auto parts from auctions, suppliers, or our stock.</p>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <div class="flow-step-number">3</div>
+            <h3>Dismantling & Cutting</h3>
+            <p>Our skilled team carefully dismantles cars and performs half-cut, nose-cut, or full disassembly as needed.</p>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <div class="flow-step-number">4</div>
+            <h3>Packing</h3>
+            <p>All parts are packed safely to reach the customer in perfect condition.</p>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <div class="flow-step-number">5</div>
+            <h3>Container Loading</h3>
+            <p>We load cars and parts into containers using methods like full car loading, CKD, rack & tack, or bulk parts, depending on the customer's needs.</p>
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <div class="flow-step">
+            <div class="flow-step-number">6</div>
+            <h3>Shipment</h3>
+            <p>We handle shipping and all documentation, making sure the container reaches the customer safely and on time.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ <!-- /.common-contact -->
+  <footer class="footer">
+    <div class="footer__body">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__nav">
+            <li class="footer__item">
+              <div class="footer__head _has-child">
+                <a href="" class="footer__link"><span>Services</span></a>
+                <div class="acd-btn _tb-sp"></div>
+              </div>
+              <ul class="child-menu acd-body">
+                <li class="child-menu__item">
+                  <a  class="child-menu__link"><span>Vehicle
+                      Procurement</span></a>
+                </li>
+                <li class="child-menu__item">
+                  <a  class="child-menu__link"><span>Car
+                      Dismantling</span></a>
+                </li>
+                <li class="child-menu__item">
+                  <a  class="child-menu__link"><span>Part
+                      Storage</span></a>
+                </li>
+                <li class="child-menu__item">
+                  <a  class="child-menu__link"><span>Container
+                      Shipping</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__item">
+                <a href="https://assets/office" class="footer__link"><span>Office Locations</span></a>
+            </li>
+            <li class="footer__item">
+              <div class="footer__head">
+                <a href="https://assets/contact" class="footer__link">
+                  <span>Contact Us</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="footer__contact">
+            <h3>Contact Information</h3>
+            <p><strong>Address:</strong> Shichiminakano 198-2, Imizu City, Toyama-ken, 933-0253, JAPAN</p>
+            <p><strong>Phone:</strong> +81-90-3052-8856</p>
+            <p><strong>Email:</strong> <a href="mailto:rashidjap@yahoo.com">rashidjap@yahoo.com</a></p>
+            <p><strong>Business Hours:</strong> Monday-Friday 9:00 AM - 6:00 PM JST</p>
+          </div>
+          <div class="footer__social">
+            <h3>Social Media</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/japantrektoyama" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://www.instagram.com/japantrek.co.jp" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="_tb-sp">
+          <ul class="footer__sub-nav">
+            <li><a href="https://assets/sitemap">Sitemap</a></li>
+            <li><a href="https://assets/info_security">Information Security Policy</a></li>
+            <li><a href="https://assets/info_security#privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="_pc">
+            <ul class="footer__sub-nav">
+              <li><a href="https://assets/sitemap">Sitemap</a></li>
+              <li><a href="https://assets/info_security">Information Security Policy</a></li>
+              <li><a href="https://assets/info_security#privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <p class="footer__copy">© 2022
+            <script>new Date().getFullYear() > 2022 && document.write(" " + new Date().getFullYear());</script>
+            Biwako International Co., Ltd.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
