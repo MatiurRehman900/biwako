@@ -16,7 +16,8 @@
     id="jquery-core-js"></script>
   <script type="text/javascript" src="./assets/wp/wp-includes/js/jquery/jquery-migrate.min_ver%3D3.3.2.js"
     id="jquery-migrate-js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
   <style>
     .about-hero {
       background: linear-gradient(135deg, #ff6900 0%, #ff8533 100%);
@@ -235,89 +236,117 @@
 </head>
 
 <body>
+  <div style="display: flex;  justify-content: space-between; width: 100%; padding: 40px 100px 20px 100px ">
+    <div style="display: flex;">
+      <img src="./assets/wp/wp-content/themes/isuzu-logistics/img/confirm-imges/logo-only.png" alt=""
+        style="width: 100px;">
+      <div>
+        <h1 style="font-size: 22px; font-weight: bold; color: #ff6900;">Biwako International Trading., Ltd.</h1>
+        <h1 style="font-weight: bold;">びわこインターナシ ョナル トレーデイング有限会社</h1>
+        <h1 style="font-weight: bold;">Бивако интернационал трединг</h1>
+      </div>
+    </div>
+    <div>
+      <center>
+        <h1 style="font-weight: 600;">Language</h1>
+      </center>
+      <div style="display: flex; gap: 15px;">
+        <div style="cursor: pointer; text-align: center;">
+          <span class="fi fi-us" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
+          <p style="font-weight: 600;">English</p>
+        </div>
+        <div style="cursor: pointer; text-align: center;">
+          <span class="fi fi-ru" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
+          <p style="font-weight: 600;">Русский</p>
+        </div>
+        <div style="cursor: pointer; text-align: center;">
+          <span class="fi fi-jp" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
+          <p style="font-weight: 600;">日本語</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <div class="header__top">
       <div class="header__inner">
-        <h1 class="header__logo">
-          <a href="index.html">
-            <h2 style="font-weight: 900; font-size: 34px; color: #ff6900;">Biwako</h2>
-          </a>
-        </h1>
         <nav class="_pc">
           <ul class="header__nav">
             <li class="subNav--hover">
-              <a href="index.html">Home</a>
+              <a href="index.html" ><i class="fas fa-home"
+                  style="margin-right: 8px;"></i>Home</a>
             </li>
-            <!-- <li class="subNav--hover">
-              <a href="">Services</a>
-              <div class="subNav">
-                <div class="container subNav__inner">
-                  <div class="subNav__head">
-                    <p class="subNav__ttl">Services</p>
-                    <div class="subNav__img _logisticssolution"></div>
-                  </div>
-                  <ul class="subNav__list">
-                    <li class="subNav__item">
-                      <a href="#" class="subNav__link">
-                        <span class="subNav__icon"><span class="subNav__icon--box"><span
-                              class="subNav__icon--arrow"></span></span></span>
-                        <p class="subNav__txt">Vehicle Procurement</p>
-                      </a>
-                    </li>
-                    <li class="subNav__item">
-                      <a href="#" class="subNav__link">
-                        <span class="subNav__icon"><span class="subNav__icon--box"><span
-                              class="subNav__icon--arrow"></span></span></span>
-                        <p class="subNav__txt">Car Dismantling</p>
-                      </a>
-                    </li>
-                    <li class="subNav__item">
-                      <a href="#" class="subNav__link">
-                        <span class="subNav__icon"><span class="subNav__icon--box"><span
-                              class="subNav__icon--arrow"></span></span></span>
-                        <p class="subNav__txt">Part Storage</p>
-                      </a>
-                    </li>
-                    <li class="subNav__item">
-                      <a href="#" class="subNav__link">
-                        <span class="subNav__icon"><span class="subNav__icon--box"><span
-                              class="subNav__icon--arrow"></span></span></span>
-                        <p class="subNav__txt">Container Shipping</p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li> -->
+
             <li class="subNav--hover">
-              <a href="about.html" style="color: #ff6900;">About us</a>
+              <a href="about.html" style="background: #ff6900;"><i class="fas fa-building" style="margin-right: 8px;"></i>Company Information</a>
             </li>
             <li class="subNav--hover">
-              <a href="business-flow.html">Business Flow</a>
+              <a href="business-flow.html"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i>Business
+                Flow</a>
             </li>
-            <li class="_recruit">
-              <a href="contact.html">Contact Us</a>
+            <li class="subNav--hover">
+              <a href="contact.html"><i class="fas fa-envelope" style="margin-right: 8px;"></i>Contact Us</a>
             </li>
           </ul>
         </nav>
+        <div id="js-hamburger-btn" class="hamburger-btn _tb-sp">
+          <div class="hamburger-btn__icon">
+            <span class="hamburger-btn__parts _top"></span>
+            <span class="hamburger-btn__parts _middle"></span>
+            <span class="hamburger-btn__parts _bottom"></span>
+          </div>
+        </div>
+      </div>
+      <div id="js-drawer-menu" class="drawer">
+        <div class="container">
+          <nav class="_tb-sp drawer__inner">
+            <ul class="drawer__nav">
+              <li class="drawer__item  _has-child">
+                <div class="drawer__row">
+                  <a href="https://assets/logisticssolution" class="drawer__link">Services</a>
+                  <div class="acd-btn"></div>
+                </div>
+                <ul class="child-menu acd-body">
+                  <li class="child-menu__item"><a href="#" class="child-menu__link">Vehical Procurement</a></li>
+                  <li class="child-menu__item"><a href="#" class="child-menu__link">Car dismantaling</a></li>
+                  <li class="child-menu__item"><a href="#" class="child-menu__link">Part Storage</a></li>
+                  <li class="child-menu__item"><a href="#" class="child-menu__link">Container Shippingn</a></li>
+                </ul>
+              </li>
+              <li class="drawer__item">
+                <a href="#" class="drawer__link">About us</a>
+              </li>
+              <li class="drawer__item">
+                <a href="#" class="drawer__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-  </header>
 
+  </header>
+  
   <main>
     <!-- Main Content -->
     <section class="about-content">
       <div class="container">
         <!-- Company Overview -->
         <div class="about-section">
-        <center>
-          <h2>About Us</h2>
-        </center>
-          <p>Founded in 2003, our company began its journey in the used car export business. In the early years, we primarily exported vehicles to Russia, Pakistan, the UK, UAE, and other international markets. As our network and expertise expanded, we identified a growing global demand for high-quality used auto parts.</p>
-          <p>Over time, we gradually diversified from complete car exports into the used automotive parts industry. Today, we specialize in the bulk export of used auto parts and proudly operate as a reliable supplier to markets such as the Philippines, Pakistan, UAE, Russia, Africa, and Latin American countries.</p>
-          <p>With over two decades of industry experience, we have built strong partnerships, gained extensive market knowledge, and established ourselves as a trusted name in the global auto parts export business.</p>
-          <p>We are a multilingual team, capable of communicating in: <strong>English, Japanese, Russian, Urdu, and Pashto</strong>, enabling us to serve a diverse international customer base effectively.</p>
-          <p>Our commitment to quality, reliability, and customer satisfaction continues to drive our growth as we deliver value and trusted automotive solutions around the world.</p>
+          <center>
+            <h2>About Us</h2>
+          </center>
+          <p>Founded in 2003, our company began its journey in the used car export business. In the early years, we
+            primarily exported vehicles to Russia, Pakistan, the UK, UAE, and other international markets. As our
+            network and expertise expanded, we identified a growing global demand for high-quality used auto parts.</p>
+          <p>Over time, we gradually diversified from complete car exports into the used automotive parts industry.
+            Today, we specialize in the bulk export of used auto parts and proudly operate as a reliable supplier to
+            markets such as the Philippines, Pakistan, UAE, Russia, Africa, and Latin American countries.</p>
+          <p>With over two decades of industry experience, we have built strong partnerships, gained extensive market
+            knowledge, and established ourselves as a trusted name in the global auto parts export business.</p>
+          <p>We are a multilingual team, capable of communicating in: <strong>English, Japanese, Russian, Urdu, and
+              Pashto</strong>, enabling us to serve a diverse international customer base effectively.</p>
+          <p>Our commitment to quality, reliability, and customer satisfaction continues to drive our growth as we
+            deliver value and trusted automotive solutions around the world.</p>
         </div>
 
       </div>
@@ -336,12 +365,16 @@
             <li>20 minutes from Toyama Iwase Port</li>
             <li>25 minutes from Toyama Fushiki Port</li>
           </ul>
-          <p>This prime location makes us one of the most convenient and efficient hubs for exports to Russia and other international destinations. Our proximity to multiple ports ensures faster loading, reduced transportation costs, and timely shipments.</p>
+          <p>This prime location makes us one of the most convenient and efficient hubs for exports to Russia and other
+            international destinations. Our proximity to multiple ports ensures faster loading, reduced transportation
+            costs, and timely shipments.</p>
         </div>
 
         <div class="reason-card">
           <h3>2. Strong and Smooth Supply Chain</h3>
-          <p>Thanks to our long-term relationships with local car dealers and our memberships in major Japanese auto auctions, we maintain a strong and reliable supply chain. We can source all types of vehicles, including:</p>
+          <p>Thanks to our long-term relationships with local car dealers and our memberships in major Japanese auto
+            auctions, we maintain a strong and reliable supply chain. We can source all types of vehicles, including:
+          </p>
           <ul>
             <li>Passenger cars</li>
             <li>Vans</li>
@@ -353,19 +386,24 @@
 
         <div class="reason-card">
           <h3>3. Multilingual Staff</h3>
-          <p>Our team consists of multilingual professionals who can communicate seamlessly with customers from different regions. We speak: <strong>English, Japanese, Russian, Urdu, and Pashto</strong>.</p>
-          <p>This helps us provide better support, clear communication, and smooth coordination throughout the buying and shipping process.</p>
+          <p>Our team consists of multilingual professionals who can communicate seamlessly with customers from
+            different regions. We speak: <strong>English, Japanese, Russian, Urdu, and Pashto</strong>.</p>
+          <p>This helps us provide better support, clear communication, and smooth coordination throughout the buying
+            and shipping process.</p>
         </div>
 
         <div class="reason-card">
           <h3>4. Licensed and Authorized</h3>
-          <p>We are a fully licensed and registered exporter in Japan. Our official licenses and certifications allow us to:</p>
+          <p>We are a fully licensed and registered exporter in Japan. Our official licenses and certifications allow us
+            to:</p>
           <ul>
             <li>Participate in all major Japanese auto auctions</li>
             <li>Legally dismantle and recycle Japanese vehicles</li>
-            <li>Handle chlorofluorocarbon (CFC) removal, airbag dismantling, vehicle scrapping, and parts dismantling in compliance with Japanese regulations</li>
+            <li>Handle chlorofluorocarbon (CFC) removal, airbag dismantling, vehicle scrapping, and parts dismantling in
+              compliance with Japanese regulations</li>
           </ul>
-          <p>These certifications ensure that our operations are safe, environmentally responsible, and fully aligned with Japan's strict automotive recycling standards.</p>
+          <p>These certifications ensure that our operations are safe, environmentally responsible, and fully aligned
+            with Japan's strict automotive recycling standards.</p>
         </div>
 
         <div class="reason-card">
@@ -381,7 +419,8 @@
             </div>
             <div class="team-card">
               <h4>Dispentaling Staff</h4>
-              <p>We have hired 4 to 5 team members, each with over 10 years of experience, to ensure that all parts are carefully dismantled and delivered to you without any damage.</p>
+              <p>We have hired 4 to 5 team members, each with over 10 years of experience, to ensure that all parts are
+                carefully dismantled and delivered to you without any damage.</p>
             </div>
           </div>
         </div>
@@ -405,25 +444,25 @@
               </div>
               <ul class="child-menu acd-body">
                 <li class="child-menu__item">
-                  <a  class="child-menu__link"><span>Vehicle
+                  <a class="child-menu__link"><span>Vehicle
                       Procurement</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a  class="child-menu__link"><span>Car
+                  <a class="child-menu__link"><span>Car
                       Dismantling</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a  class="child-menu__link"><span>Part
+                  <a class="child-menu__link"><span>Part
                       Storage</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a  class="child-menu__link"><span>Container
+                  <a class="child-menu__link"><span>Container
                       Shipping</span></a>
                 </li>
               </ul>
             </li>
             <li class="footer__item">
-                <a href="https://assets/office" class="footer__link"><span>Office Locations</span></a>
+              <a href="https://assets/office" class="footer__link"><span>Office Locations</span></a>
             </li>
             <li class="footer__item">
               <div class="footer__head">

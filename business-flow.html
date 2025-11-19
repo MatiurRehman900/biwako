@@ -16,7 +16,8 @@
     id="jquery-core-js"></script>
   <script type="text/javascript" src="./assets/wp/wp-includes/js/jquery/jquery-migrate.min_ver%3D3.3.2.js"
     id="jquery-migrate-js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
   <style>
     .flow-hero {
       background: linear-gradient(135deg, #ff6900 0%, #ff8533 100%);
@@ -111,73 +112,94 @@
 </head>
 
 <body>
+  <div style="display: flex;  justify-content: space-between; width: 100%; padding: 40px 100px 20px 100px ">
+    <div style="display: flex;">
+      <img src="./assets/wp/wp-content/themes/isuzu-logistics/img/confirm-imges/logo-only.png" alt=""
+        style="width: 100px;">
+      <div>
+        <h1 style="font-size: 22px; font-weight: bold; color: #ff6900;">Biwako International Trading., Ltd.</h1>
+        <h1 style="font-weight: bold;">びわこインターナシ ョナル トレーデイング有限会社</h1>
+        <h1 style="font-weight: bold;">Бивако интернационал трединг</h1>
+      </div>
+    </div>
+    <div>
+      <center>
+        <h1 style="font-weight: 600;">Language</h1>
+      </center>
+      <div style="display: flex; gap: 15px;">
+        <div style="cursor: pointer; text-align: center;">
+          <span class="fi fi-us" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
+          <p style="font-weight: 600;">English</p>
+        </div>
+        <div style="cursor: pointer; text-align: center;">
+          <span class="fi fi-ru" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
+          <p style="font-weight: 600;">Русский</p>
+        </div>
+        <div style="cursor: pointer; text-align: center;">
+          <span class="fi fi-jp" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
+          <p style="font-weight: 600;">日本語</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <div class="header__top">
       <div class="header__inner">
-        <h1 class="header__logo">
-          <a href="index.html">
-            <h2 style="font-weight: 900; font-size: 34px; color: #ff6900;">Biwako</h2>
-          </a>
-        </h1>
         <nav class="_pc">
           <ul class="header__nav">
             <li class="subNav--hover">
-              <a href="index.html">Home</a>
+              <a href="index.html"><i class="fas fa-home"
+                  style="margin-right: 8px;"></i>Home</a>
             </li>
-            <!-- <li class="subNav--hover">
-              <a href="">Services</a>
-              <div class="subNav">
-                <div class="container subNav__inner">
-                  <div class="subNav__head">
-                    <p class="subNav__ttl">Services</p>
-                    <div class="subNav__img _logisticssolution"></div>
-                  </div>
-                  <ul class="subNav__list">
-                    <li class="subNav__item">
-                      <a href="#" class="subNav__link">
-                        <span class="subNav__icon"><span class="subNav__icon--box"><span
-                              class="subNav__icon--arrow"></span></span></span>
-                        <p class="subNav__txt">Vehicle Procurement</p>
-                      </a>
-                    </li>
-                    <li class="subNav__item">
-                      <a href="#" class="subNav__link">
-                        <span class="subNav__icon"><span class="subNav__icon--box"><span
-                              class="subNav__icon--arrow"></span></span></span>
-                        <p class="subNav__txt">Car Dismantling</p>
-                      </a>
-                    </li>
-                    <li class="subNav__item">
-                      <a href="#" class="subNav__link">
-                        <span class="subNav__icon"><span class="subNav__icon--box"><span
-                              class="subNav__icon--arrow"></span></span></span>
-                        <p class="subNav__txt">Part Storage</p>
-                      </a>
-                    </li>
-                    <li class="subNav__item">
-                      <a href="#" class="subNav__link">
-                        <span class="subNav__icon"><span class="subNav__icon--box"><span
-                              class="subNav__icon--arrow"></span></span></span>
-                        <p class="subNav__txt">Container Shipping</p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li> -->
+
             <li class="subNav--hover">
-              <a href="about.html">About us</a>
+              <a href="about.html"><i class="fas fa-building" style="margin-right: 8px;"></i>Company Information</a>
             </li>
             <li class="subNav--hover">
-              <a href="business-flow.html" style="color: #ff6900;">Business Flow</a>
+              <a href="business-flow.html" style="background: #ff6900;"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i>Business
+                Flow</a>
             </li>
-            <li class="_recruit">
-              <a href="contact.html">Contact Us</a>
+            <li class="subNav--hover">
+              <a href="contact.html"><i class="fas fa-envelope" style="margin-right: 8px;"></i>Contact Us</a>
             </li>
           </ul>
         </nav>
+        <div id="js-hamburger-btn" class="hamburger-btn _tb-sp">
+          <div class="hamburger-btn__icon">
+            <span class="hamburger-btn__parts _top"></span>
+            <span class="hamburger-btn__parts _middle"></span>
+            <span class="hamburger-btn__parts _bottom"></span>
+          </div>
+        </div>
+      </div>
+      <div id="js-drawer-menu" class="drawer">
+        <div class="container">
+          <nav class="_tb-sp drawer__inner">
+            <ul class="drawer__nav">
+              <li class="drawer__item  _has-child">
+                <div class="drawer__row">
+                  <a href="https://assets/logisticssolution" class="drawer__link">Services</a>
+                  <div class="acd-btn"></div>
+                </div>
+                <ul class="child-menu acd-body">
+                  <li class="child-menu__item"><a href="#" class="child-menu__link">Vehical Procurement</a></li>
+                  <li class="child-menu__item"><a href="#" class="child-menu__link">Car dismantaling</a></li>
+                  <li class="child-menu__item"><a href="#" class="child-menu__link">Part Storage</a></li>
+                  <li class="child-menu__item"><a href="#" class="child-menu__link">Container Shippingn</a></li>
+                </ul>
+              </li>
+              <li class="drawer__item">
+                <a href="#" class="drawer__link">About us</a>
+              </li>
+              <li class="drawer__item">
+                <a href="#" class="drawer__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
+
   </header>
 
   <main>
@@ -213,7 +235,8 @@
           <div class="flow-step">
             <div class="flow-step-number">3</div>
             <h3>Dismantling & Cutting</h3>
-            <p>Our skilled team carefully dismantles cars and performs half-cut, nose-cut, or full disassembly as needed.</p>
+            <p>Our skilled team carefully dismantles cars and performs half-cut, nose-cut, or full disassembly as
+              needed.</p>
           </div>
 
           <div class="flow-arrow">↓</div>
@@ -229,7 +252,8 @@
           <div class="flow-step">
             <div class="flow-step-number">5</div>
             <h3>Container Loading</h3>
-            <p>We load cars and parts into containers using methods like full car loading, CKD, rack & tack, or bulk parts, depending on the customer's needs.</p>
+            <p>We load cars and parts into containers using methods like full car loading, CKD, rack & tack, or bulk
+              parts, depending on the customer's needs.</p>
           </div>
 
           <div class="flow-arrow">↓</div>
@@ -237,7 +261,8 @@
           <div class="flow-step">
             <div class="flow-step-number">6</div>
             <h3>Shipment</h3>
-            <p>We handle shipping and all documentation, making sure the container reaches the customer safely and on time.</p>
+            <p>We handle shipping and all documentation, making sure the container reaches the customer safely and on
+              time.</p>
           </div>
 
         </div>
@@ -246,7 +271,7 @@
 
   </main>
 
- <!-- /.common-contact -->
+  <!-- /.common-contact -->
   <footer class="footer">
     <div class="footer__body">
       <div class="container">
@@ -259,25 +284,25 @@
               </div>
               <ul class="child-menu acd-body">
                 <li class="child-menu__item">
-                  <a  class="child-menu__link"><span>Vehicle
+                  <a class="child-menu__link"><span>Vehicle
                       Procurement</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a  class="child-menu__link"><span>Car
+                  <a class="child-menu__link"><span>Car
                       Dismantling</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a  class="child-menu__link"><span>Part
+                  <a class="child-menu__link"><span>Part
                       Storage</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a  class="child-menu__link"><span>Container
+                  <a class="child-menu__link"><span>Container
                       Shipping</span></a>
                 </li>
               </ul>
             </li>
             <li class="footer__item">
-                <a href="https://assets/office" class="footer__link"><span>Office Locations</span></a>
+              <a href="https://assets/office" class="footer__link"><span>Office Locations</span></a>
             </li>
             <li class="footer__item">
               <div class="footer__head">
