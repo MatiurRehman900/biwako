@@ -1,0 +1,9 @@
+{
+  "name": "biwako-2",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}

@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Export Business Flow - Biwako</title>
 
-  <link rel="stylesheet" id="destyle-css"
-    href="./assets/css/destyle_ver%3D6.1.8.css" type="text/css" media="all">
-  <link rel="stylesheet" id="my-style-css"
-    href="./assets/css/style.min_ver%3D1756352905.css" type="text/css" media="all">
+  <link rel="stylesheet" id="destyle-css" href="./assets/css/destyle_ver%3D6.1.8.css" type="text/css" media="all">
+  <link rel="stylesheet" id="my-style-css" href="./assets/css/style.min_ver%3D1756352905.css" type="text/css"
+    media="all">
   <link rel="stylesheet" id="swiper-style-css"
     href="./F9S3WNJ2wc53.com/swiper%407.4.1/swiper-bundle.min_ver%3D6.1.8.css" type="text/css" media="all">
   <script type="text/javascript" src="./assets/wp-includes/js/jquery/jquery.min_ver%3D3.6.1.js"
@@ -18,126 +17,52 @@
     id="jquery-migrate-js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+  <link rel="stylesheet" href="./output.css">
+  <script src="./tailwind-config.js"></script>
   <style>
     .flow-hero {
-      background: linear-gradient(135deg, #ff6900 0%, #ff8533 100%);
+      background: linear-gradient(135deg, #000000, #ff8533);
       color: white;
       padding: 80px 0;
       text-align: center;
     }
-
     .flow-hero h1 {
       font-size: 3rem;
       font-weight: 900;
       margin-bottom: 20px;
     }
-
     .flow-hero p {
       font-size: 1.2rem;
       max-width: 700px;
       margin: 0 auto;
     }
-
-    .flow-content {
-      padding: 80px 0;
-      background: #f8f9fa;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .flow-steps {
-      display: grid;
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .flow-step {
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
-      position: relative;
-      border-left: 6px solid #ff6900;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .flow-step:hover {
-      transform: translateX(10px);
-      box-shadow: 0 5px 30px rgba(255, 105, 0, 0.2);
-    }
-
-    .flow-step-number {
-      position: absolute;
-      top: -20px;
-      left: 30px;
-      background: linear-gradient(135deg, #ff6900, #ff8533);
-      color: white;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.8rem;
-      font-weight: 900;
-      box-shadow: 0 4px 15px rgba(255, 105, 0, 0.4);
-    }
-
-    .flow-step h3 {
-      color: #ff6900;
-      font-size: 2rem;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      font-weight: 700;
-    }
-
-    .flow-step p {
-      font-size: 1.15rem;
-      line-height: 1.8;
-      color: #333;
-      margin: 0;
-    }
-
-    .flow-arrow {
-      text-align: center;
-      color: #ff6900;
-      font-size: 2.5rem;
-      margin: -10px 0;
-    }
   </style>
 </head>
 
 <body>
-  <div style="display: flex;  justify-content: space-between; width: 100%; padding: 40px 100px 20px 100px ">
-    <div style="display: flex;">
-      <img src="./assets/img/confirm-imges/logo-only.png" alt=""
-        style="width: 100px;">
+  <div class="flex flex-col md:flex-row justify-between w-full px-4 md:px-24 py-10 md:py-5 gap-5">
+    <a href="/" class="flex">
+      <img src="./assets/img/confirm-imges/logo-only.png" alt="" class="w-20 h-[70px] md:h-auto md:w-28">
       <div>
-        <h1 style="font-size: 22px; font-weight: bold; color: #ff6900;">Biwako International Trading., Ltd.</h1>
-        <h1 style="font-weight: bold;">びわこインターナシ ョナル トレーデイング有限会社</h1>
-        <h1 style="font-weight: bold;">Бивако интернационал трединг</h1>
+        <h1 class="text-lg md:text-xl font-bold text-primary">Biwako International Trading., Ltd.</h1>
+        <h1 class="font-bold text-sm md:text-base">びわこインターナシ ョナル トレーデイング有限会社</h1>
+        <h1 class="font-bold text-sm md:text-base">Бивако интернационал трединг</h1>
       </div>
-    </div>
-    <div>
-      <center>
-        <h1 style="font-weight: 600;">Language</h1>
-      </center>
-      <div style="display: flex; gap: 15px;">
-        <div style="cursor: pointer; text-align: center;">
-          <span class="fi fi-us" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
-          <p style="font-weight: 600;">English</p>
+    </a>
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="font-semibold text-center">Language</h1>
+      <div class="flex gap-4">
+        <div class="cursor-pointer text-center">
+          <span class="fi fi-us w-10 h-10 rounded-full border border-gray-400"></span>
+          <p class="font-semibold text-sm">English</p>
         </div>
-        <div style="cursor: pointer; text-align: center;">
-          <span class="fi fi-ru" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
-          <p style="font-weight: 600;">Русский</p>
+        <div class="cursor-pointer text-center">
+          <span class="fi fi-ru w-10 h-10 rounded-full border border-gray-400"></span>
+          <p class="font-semibold text-sm">Русский</p>
         </div>
-        <div style="cursor: pointer; text-align: center;">
-          <span class="fi fi-jp" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid gray;"></span>
-          <p style="font-weight: 600;">日本語</p>
+        <div class="cursor-pointer text-center">
+          <span class="fi fi-jp w-10 h-10 rounded-full border border-gray-400"></span>
+          <p class="font-semibold text-sm">日本語</p>
         </div>
       </div>
     </div>
@@ -148,19 +73,19 @@
         <nav class="_pc">
           <ul class="header__nav">
             <li class="subNav--hover">
-              <a href="index.html"><i class="fas fa-home"
-                  style="margin-right: 8px;"></i>Home</a>
+              <a href="/"><i class="fas fa-home mr-2"></i>Home</a>
             </li>
 
             <li class="subNav--hover">
               <a href="about.html"><i class="fas fa-building" style="margin-right: 8px;"></i>Company Information</a>
             </li>
             <li class="subNav--hover">
-              <a href="business-flow.html" style="background: #ff6900;"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i>Business
+              <a href="business-flow.html" class="bg-primary"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i>Business
                 Flow</a>
             </li>
             <li class="subNav--hover">
-              <a href="contact.html"><i class="fas fa-envelope" style="margin-right: 8px;"></i>Contact Us</a>
+              <a href="contact.html"><i class="fas fa-envelope"
+                  style="margin-right: 8px;"></i>Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -176,7 +101,7 @@
         <div class="container">
           <nav class="_tb-sp drawer__inner">
             <ul class="drawer__nav">
-              <li class="drawer__item  _has-child">
+              <!-- <li class="drawer__item  _has-child">
                 <div class="drawer__row">
                   <a href="https://assets/logisticssolution" class="drawer__link">Services</a>
                   <div class="acd-btn"></div>
@@ -187,12 +112,18 @@
                   <li class="child-menu__item"><a href="#" class="child-menu__link">Part Storage</a></li>
                   <li class="child-menu__item"><a href="#" class="child-menu__link">Container Shippingn</a></li>
                 </ul>
+              </li> -->
+              <li class="drawer__item">
+                <a href="index.html" class="drawer__link">Home</a>
               </li>
               <li class="drawer__item">
-                <a href="#" class="drawer__link">About us</a>
+                <a href="about.html" class="drawer__link">Company Information</a>
               </li>
               <li class="drawer__item">
-                <a href="#" class="drawer__link">Contact Us</a>
+                <a href="business-flow.html" class="drawer__link">Business Flow</a>
+              </li>
+              <li class="drawer__item">
+                <a href="contact.html" class="drawer__link">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -212,64 +143,126 @@
     </section>
 
     <!-- Flow Content -->
-    <section class="flow-content">
-      <div class="container">
-        <div class="flow-steps">
-
-          <div class="flow-step">
-            <div class="flow-step-number">1</div>
-            <h3>Receiving Orders</h3>
-            <p>We get customer orders and check all details to make sure everything is correct.</p>
+    <section class="flow-content py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="flow-steps space-y-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="flow-step step-card-1 animate-slide-left">
+              <div class="flow-step-number step-number-1"><span>1</span></div>
+              <h3>Receiving Orders</h3>
+              <p>We get customer orders and check all details to make sure everything is correct.</p>
+            </div>
+            <div class="flex justify-center animate-slide-right">
+              <img src="./assets/img/bussniess-flow/recieving-order.jpeg" alt="Receiving Orders" class="w-full max-w-lg rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+            </div>
           </div>
 
-          <div class="flow-arrow">↓</div>
-
-          <div class="flow-step">
-            <div class="flow-step-number">2</div>
-            <h3>Arranging Cars & Parts</h3>
-            <p>We collect the required cars and auto parts from auctions, suppliers, or our stock.</p>
+          <div class="flex justify-center">
+            <div class="text-5xl text-primary animate-bounce">↓</div>
           </div>
 
-          <div class="flow-arrow">↓</div>
-
-          <div class="flow-step">
-            <div class="flow-step-number">3</div>
-            <h3>Dismantling & Cutting</h3>
-            <p>Our skilled team carefully dismantles cars and performs half-cut, nose-cut, or full disassembly as
-              needed.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="flex justify-center md:order-1 animate-slide-left">
+              <img src="./assets/img/bussniess-flow/arranging-parts.jpeg" alt="Arranging Cars & Parts" class="w-full max-w-lg rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+            </div>
+            <div class="flow-step step-card-2 md:order-2 animate-slide-right">
+              <div class="flow-step-number step-number-2"><span>2</span></div>
+              <h3>Arranging Cars & Parts</h3>
+              <p>We collect the required cars and auto parts from auctions, suppliers, or our stock.</p>
+            </div>
           </div>
 
-          <div class="flow-arrow">↓</div>
-
-          <div class="flow-step">
-            <div class="flow-step-number">4</div>
-            <h3>Packing</h3>
-            <p>All parts are packed safely to reach the customer in perfect condition.</p>
+          <div class="flex justify-center">
+            <div class="text-5xl text-primary animate-bounce">↓</div>
           </div>
 
-          <div class="flow-arrow">↓</div>
-
-          <div class="flow-step">
-            <div class="flow-step-number">5</div>
-            <h3>Container Loading</h3>
-            <p>We load cars and parts into containers using methods like full car loading, CKD, rack & tack, or bulk
-              parts, depending on the customer's needs.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="flow-step step-card-3 animate-slide-left">
+              <div class="flow-step-number step-number-3"><span>3</span></div>
+              <h3>Dismantling & Cutting</h3>
+              <p>Our skilled team carefully dismantles cars and performs half-cut, nose-cut, or full disassembly as needed.</p>
+            </div>
+            <div class="flex justify-center animate-slide-right">
+              <img src="./assets/img/bussniess-flow/cutting-dispentaling.jpeg" alt="Dismantling & Cutting" class="w-full max-w-lg rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+            </div>
           </div>
 
-          <div class="flow-arrow">↓</div>
+          <div class="flex justify-center">
+            <div class="text-5xl text-primary animate-bounce">↓</div>
+          </div>
 
-          <div class="flow-step">
-            <div class="flow-step-number">6</div>
-            <h3>Shipment</h3>
-            <p>We handle shipping and all documentation, making sure the container reaches the customer safely and on
-              time.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="flex justify-center md:order-1 animate-slide-left">
+              <img src="./assets/img/bussniess-flow/packing.jpeg" alt="Packing" class="w-full max-w-lg rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+            </div>
+            <div class="flow-step step-card-4 md:order-2 animate-slide-right">
+              <div class="flow-step-number step-number-4"><span>4</span></div>
+              <h3>Packing</h3>
+              <p>All parts are packed safely to reach the customer in perfect condition.</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="text-5xl text-primary animate-bounce">↓</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="flow-step step-card-5 animate-slide-left">
+              <div class="flow-step-number step-number-5"><span>5</span></div>
+              <h3>Container Loading</h3>
+              <p>We load cars and parts into containers using methods like full car loading, CKD, rack & tack, or bulk parts, depending on the customer's needs.</p>
+            </div>
+            <div class="flex justify-center animate-slide-right">
+              <img src="./assets/img/bussniess-flow/container-laoding.jpeg" alt="Container Loading" class="w-full max-w-lg rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="text-5xl text-primary animate-bounce">↓</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="flex justify-center md:order-1 animate-slide-left">
+              <img src="./assets/img/bussniess-flow/shipment.jpeg" alt="Shipment" class="w-full max-w-lg rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+            </div>
+            <div class="flow-step step-card-6 md:order-2 animate-slide-right">
+              <div class="flow-step-number step-number-6"><span>6</span></div>
+              <h3>Shipment</h3>
+              <p>We handle shipping and all documentation, making sure the container reaches the customer safely and on time.</p>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <script>
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateX(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-slide-left, .animate-slide-right').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+  </script>
 
   <!-- /.common-contact -->
   <footer class="footer">
@@ -355,7 +348,7 @@
       </div>
     </div>
   </footer>
-
 </body>
+<script type="text/javascript" src="./assets/js/script_ver%3D1670554007.js" id="my-script-js"></script>
 
 </html>

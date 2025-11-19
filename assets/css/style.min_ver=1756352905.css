@@ -2228,15 +2228,18 @@ video {
 }
 
 .main02__item._vehicle-procurement {
-    background-image: url(./../img/confirm-imges/car-buying.jpg)
+    background-image: url(./../img/confirm-imges/car-buying.png)
 }
 
 .main02__item._car-dismantling {
-    background-image: url(./../img/confirm-imges/dispentaling.png)
+    background-image: url(./../img/confirm-imges/dispentaling.png);
+    background-position: top;
 }
 
 .main02__item._part-storage {
-    background-image: url(./../img/confirm-imges/parts-loading.png)
+    background-image: url(./../img/confirm-imges/parts-loading.png);
+    background-size: contain;
+    background-repeat: repeat;
 }
 
 .main02__item._container-shipping {
