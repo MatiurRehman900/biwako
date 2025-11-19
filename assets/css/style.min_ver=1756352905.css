@@ -2107,7 +2107,10 @@ video {
 .main02 {
     padding-top: 4.5vw;
     padding-bottom: 9.7vw;
-    background-color: #000;
+    /* background-color: lightgray; */
+     background-image: url(./../img/main/parts-rectangle.jpeg);
+     /* background-repeat: no-repeat; */
+     /* background-size: 100% 100%; */
     position: relative;
     z-index: 0
 }
@@ -2119,7 +2122,7 @@ video {
     }
 }
 
-.main02::before {
+/* .main02::before {
     background-image: url(../img/main/main02_bg_top-2.jpeg);
     background-position: center;
     background-size: cover;
@@ -2137,9 +2140,9 @@ video {
         width: 50.5vw;
         height: 50.5vw
     }
-}
+} */
 
-.main02::after {
+/* .main02::after {
     background-image: url(./../img/main/main02_bg_bottom.jpeg);
     background-position: center;
     background-size: cover;
@@ -2151,7 +2154,7 @@ video {
     top: 0;
     left: 0;
     z-index: -1
-}
+} */
 
 .main02__list {
     display: flex;
