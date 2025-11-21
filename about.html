@@ -17,222 +17,149 @@
     id="jquery-migrate-js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./output.css">
   <script src="./tailwind-config.js"></script>
 
   <style>
-    .about-hero {
-      background: linear-gradient(135deg, #ff6900 0%, #ff8533 100%);
+    .flow-hero {
+        background: linear-gradient(135deg, #000000, #ff8533);
       color: white;
       padding: 80px 0;
       text-align: center;
     }
-
-    .about-hero h1 {
+    .flow-hero h1 {
       font-size: 3rem;
       font-weight: 900;
       margin-bottom: 20px;
     }
-
-    .about-hero p {
+    .flow-hero p {
       font-size: 1.2rem;
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 auto;
     }
-
     .about-content {
-      padding-top: 100px;
+      padding: 80px 0;
+      background: linear-gradient(to bottom, #f9fafb, #fff);
     }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
+    .about-intro {
+      max-width: 900px;
+      margin: 0 auto 80px;
+      /* text-align: center; */
       padding: 0 20px;
     }
-
-    .about-section {
-      margin-bottom: 60px;
-    }
-
-    .about-section h2 {
-      font-size: 2.5rem;
-      color: #ff6900;
-      margin-bottom: 30px;
-      font-weight: 700;
-    }
-
-    .about-section p {
-      font-size: 1.1rem;
-      line-height: 1.8;
+    .about-intro p {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #374151;
       margin-bottom: 20px;
-      color: #333;
     }
 
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-      margin-top: 40px;
-    }
 
-    .value-item {
-      background: #f8f9fa;
-      padding: 30px;
-      border-radius: 10px;
-      border-left: 5px solid #ff6900;
-    }
 
-    .value-item h3 {
-      color: #ff6900;
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
-
-    .stats-section {
-      background: #f8f9fa;
-      padding: 60px 0;
-      text-align: center;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .stat-item {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .stat-number {
-      font-size: 3rem;
-      font-weight: 900;
-      color: #ff6900;
-      display: block;
-    }
-
-    .stat-label {
-      font-size: 1.1rem;
-      color: #666;
-      margin-top: 10px;
-    }
-
-    .languages-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 30px;
-    }
-
-    .language-item {
-      background: linear-gradient(135deg, #ff6900, #ff8533);
-      color: white;
-      padding: 15px 25px;
-      border-radius: 25px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 15px rgba(255, 105, 0, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .language-item:hover {
-      transform: translateY(-3px);
-    }
-
-    .why-choose {
-      background: white;
-    }
-
-    .why-choose h2 {
+    .section-title {
       text-align: center;
       font-size: 2.5rem;
-      color: #ff6900;
-      margin-bottom: 50px;
-      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 60px;
+      font-weight: 900;
+      position: relative;
+      padding-bottom: 20px;
     }
-
-    .reason-card {
-      background: #f8f9fa;
-      padding: 35px;
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, #ff6900, #ff8533);
+      border-radius: 2px;
+    }
+    .info-card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
       margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
-      border-left: 6px solid #ff6900;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
     }
-
-    .reason-card:hover {
+    .info-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(to bottom, #ff6900, #ff8533);
+    }
+    .info-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 5px 30px rgba(255, 105, 0, 0.2);
+      box-shadow: 0 15px 50px rgba(255, 105, 0, 0.15);
     }
-
-    .reason-card h3 {
+    .info-card h3 {
       color: #ff6900;
       font-size: 1.8rem;
       margin-bottom: 20px;
-      font-weight: 600;
+      font-weight: 800;
     }
-
-    .reason-card p {
+    .info-card p {
       font-size: 1.1rem;
       line-height: 1.8;
-      color: #333;
+      color: #374151;
       margin-bottom: 15px;
     }
-
-    .reason-card ul {
-      margin: 15px 0 15px 25px;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #333;
+    .info-card ul {
+      list-style: none;
+      margin: 15px 0;
     }
-
-    .reason-card ul li {
-      margin-bottom: 10px;
+    .info-card ul li {
+      padding-left: 30px;
       position: relative;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+      color: #374151;
     }
-
-    .reason-card ul li::marker {
+    .info-card ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
       color: #ff6900;
+      font-weight: bold;
+      font-size: 1.2rem;
     }
 
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
-      margin-top: 25px;
+      margin-top: 30px;
     }
-
     .team-card {
       background: linear-gradient(135deg, #ff6900, #ff8533);
       color: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(255, 105, 0, 0.3);
-      transition: transform 0.3s ease;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(255, 105, 0, 0.3);
+      transition: all 0.3s ease;
+      text-align: center;
     }
-
     .team-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(255, 105, 0, 0.4);
     }
-
     .team-card h4 {
-      font-size: 1.4rem;
-      margin-bottom: 12px;
-      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
-
     .team-card p {
-      color: white;
       font-size: 1.05rem;
       line-height: 1.6;
-      margin: 0;
+      opacity: 0.95;
+      color: #f9fafb;
     }
   </style>
 </head>
@@ -331,38 +258,27 @@
   </header>
 
   <main>
-    <!-- Main Content -->
-    <section class="about-content">
-      <div class="container">
-        <!-- Company Overview -->
-        <div class="about-section">
-          <center>
-            <h2>About Us</h2>
-          </center>
-          <p>Founded in 2003, our company began its journey in the used car export business. In the early years, we
-            primarily exported vehicles to Russia, Pakistan, the UK, UAE, and other international markets. As our
-            network and expertise expanded, we identified a growing global demand for high-quality used auto parts.</p>
-          <p>Over time, we gradually diversified from complete car exports into the used automotive parts industry.
-            Today, we specialize in the bulk export of used auto parts and proudly operate as a reliable supplier to
-            markets such as the Philippines, Pakistan, UAE, Russia, Africa, and Latin American countries.</p>
-          <p>With over two decades of industry experience, we have built strong partnerships, gained extensive market
-            knowledge, and established ourselves as a trusted name in the global auto parts export business.</p>
-          <p>We are a multilingual team, capable of communicating in: <strong>English, Japanese, Russian, Urdu, and
-              Pashto</strong>, enabling us to serve a diverse international customer base effectively.</p>
-          <p>Our commitment to quality, reliability, and customer satisfaction continues to drive our growth as we
-            deliver value and trusted automotive solutions around the world.</p>
-        </div>
-
+    <!-- Hero Section -->
+    <section class="flow-hero">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <h1>Company Information</h1>
+        <p>Over two decades of excellence in automotive parts export</p>
       </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-choose">
-      <div class="container">
-        <h2>Why Choose Us</h2>
+    <!-- About Content -->
+    <section class="about-content">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div class="about-intro">
+          <p><strong>Founded in 2003</strong>, our company began its journey in the used car export business. In the early years, we primarily exported vehicles to Russia, Pakistan, the UK, UAE, and other international markets.</p>
+          <p>Over time, we diversified into the <strong>used automotive parts industry</strong>. Today, we specialize in bulk export of used auto parts to the Philippines, Pakistan, UAE, Russia, Africa, and Latin America.</p>
+          <p>We are a <strong>multilingual team</strong> speaking English, Japanese, Russian, Urdu, and Pashto, enabling us to serve a diverse international customer base effectively.</p>
+        </div>
 
-        <div class="reason-card">
-          <h3>1. Strategic Location</h3>
+        <h2 class="section-title">Why Choose Us</h2>
+
+        <div class="info-card animate-slide-left">
+          <h3><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>Strategic Location</h3>
           <p>Our yard is located in Toyama Prefecture, close to three major ports. We are:</p>
           <ul>
             <li>Only 5 minutes from Toyama Shinko Port</li>
@@ -374,8 +290,8 @@
             costs, and timely shipments.</p>
         </div>
 
-        <div class="reason-card">
-          <h3>2. Strong and Smooth Supply Chain</h3>
+        <div class="info-card animate-slide-right">
+          <h3><i class="fas fa-link" style="margin-right: 10px;"></i>Strong Supply Chain</h3>
           <p>Thanks to our long-term relationships with local car dealers and our memberships in major Japanese auto
             auctions, we maintain a strong and reliable supply chain. We can source all types of vehicles, including:
           </p>
@@ -388,16 +304,16 @@
           <p>This ensures a consistent and wide range of inventory for our customers worldwide.</p>
         </div>
 
-        <div class="reason-card">
-          <h3>3. Multilingual Staff</h3>
+        <div class="info-card animate-slide-left">
+          <h3><i class="fas fa-language" style="margin-right: 10px;"></i>Multilingual Staff</h3>
           <p>Our team consists of multilingual professionals who can communicate seamlessly with customers from
             different regions. We speak: <strong>English, Japanese, Russian, Urdu, and Pashto</strong>.</p>
           <p>This helps us provide better support, clear communication, and smooth coordination throughout the buying
             and shipping process.</p>
         </div>
 
-        <div class="reason-card">
-          <h3>4. Licensed and Authorized</h3>
+        <div class="info-card animate-slide-right">
+          <h3><i class="fas fa-certificate" style="margin-right: 10px;"></i>Licensed & Authorized</h3>
           <p>We are a fully licensed and registered exporter in Japan. Our official licenses and certifications allow us
             to:</p>
           <ul>
@@ -410,8 +326,8 @@
             with Japan's strict automotive recycling standards.</p>
         </div>
 
-        <div class="reason-card">
-          <h3>5. Professional Team</h3>
+        <div class="info-card animate-slide-left">
+          <h3><i class="fas fa-users" style="margin-right: 10px;"></i>Professional Team</h3>
           <div class="team-grid">
             <div class="team-card">
               <h4>Japanese Staff</h4>
@@ -520,6 +436,27 @@
     </div>
   </footer>
 
+  <script>
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateX(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-slide-left, .animate-slide-right').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+  </script>
 </body>
 <script type="text/javascript" src="./assets/js/script_ver%3D1670554007.js" id="my-script-js"></script>
 </html>
