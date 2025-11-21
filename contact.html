@@ -192,17 +192,17 @@
       </div>
     </a>
     <div class="flex flex-col justify-center items-center">
-      <h1 class="font-semibold text-center">Language</h1>
+      <h1 class="font-semibold text-center" data-i18n="language">Language</h1>
       <div class="flex gap-4">
-        <div class="cursor-pointer text-center">
+        <div class="cursor-pointer text-center" data-lang="en">
           <span class="fi fi-us w-10 h-10 rounded-full border border-gray-400"></span>
           <p class="font-semibold text-sm">English</p>
         </div>
-        <div class="cursor-pointer text-center">
+        <div class="cursor-pointer text-center" data-lang="ru">
           <span class="fi fi-ru w-10 h-10 rounded-full border border-gray-400"></span>
           <p class="font-semibold text-sm">Русский</p>
         </div>
-        <div class="cursor-pointer text-center">
+        <div class="cursor-pointer text-center" data-lang="ja">
           <span class="fi fi-jp w-10 h-10 rounded-full border border-gray-400"></span>
           <p class="font-semibold text-sm">日本語</p>
         </div>
@@ -215,18 +215,18 @@
         <nav class="_pc">
           <ul class="header__nav">
             <li class="subNav--hover">
-              <a href="/" ><i class="fas fa-home mr-2"></i>Home</a>
+              <a href="/" ><i class="fas fa-home mr-2"></i><span data-i18n="home">Home</span></a>
             </li>
 
             <li class="subNav--hover">
-              <a href="about.html"><i class="fas fa-building" style="margin-right: 8px;"></i>Company Information</a>
+              <a href="about.html"><i class="fas fa-building" style="margin-right: 8px;"></i><span data-i18n="companyInfo">Company Information</span></a>
             </li>
             <li class="subNav--hover">
-              <a href="business-flow.html"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i>Business
-                Flow</a>
+              <a href="business-flow.html"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i><span data-i18n="businessFlow">Business
+                Flow</span></a>
             </li>
             <li class="subNav--hover">
-              <a href="contact.html" class="bg-primary"><i class="fas fa-envelope" style="margin-right: 8px;"></i>Contact Us</a>
+              <a href="contact.html" class="bg-primary"><i class="fas fa-envelope" style="margin-right: 8px;"></i><span data-i18n="contactUs">Contact Us</span></a>
             </li>
           </ul>
         </nav>
@@ -255,16 +255,16 @@
                 </ul>
               </li> -->
               <li class="drawer__item">
-                <a href="index.html" class="drawer__link">Home</a>
+                <a href="index.html" class="drawer__link" data-i18n="home">Home</a>
               </li>
               <li class="drawer__item">
-                <a href="about.html" class="drawer__link">Company Information</a>
+                <a href="about.html" class="drawer__link" data-i18n="companyInfo">Company Information</a>
               </li>
               <li class="drawer__item">
-                <a href="business-flow.html" class="drawer__link">Business Flow</a>
+                <a href="business-flow.html" class="drawer__link" data-i18n="businessFlow">Business Flow</a>
               </li>
               <li class="drawer__item">
-                <a href="contact.html" class="drawer__link">Contact Us</a>
+                <a href="contact.html" class="drawer__link" data-i18n="contactUs">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -287,80 +287,80 @@
 
           <!-- Contact Form -->
           <div class="contact-form">
-            <h2>Send us a Message</h2>
+            <h2 data-i18n="sendMessage">Send us a Message</h2>
             <form action="#" method="POST">
               <div class="form-group">
-                <label for="name">Full Name *</label>
+                <label for="name" data-i18n="fullName">Full Name</label>
                 <input type="text" id="name" name="name" required>
               </div>
 
               <div class="form-group">
-                <label for="email">Email Address *</label>
+                <label for="email" data-i18n="emailAddress">Email Address</label>
                 <input type="email" id="email" name="email" required>
               </div>
 
               <div class="form-group">
-                <label for="phone">Phone Number</label>
+                <label for="phone" data-i18n="phoneNumber">Phone Number</label>
                 <input type="tel" id="phone" name="phone">
               </div>
 
               <div class="form-group">
-                <label for="country">Country *</label>
+                <label for="country" data-i18n="country">Country</label>
                 <input type="text" id="country" name="country" required>
               </div>
 
               <div class="form-group">
-                <label for="subject">Subject *</label>
+                <label for="subject" data-i18n="subject">Subject</label>
                 <select id="subject" name="subject" required>
-                  <option value="">Select a subject</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="parts">Auto Parts Inquiry</option>
-                  <option value="vehicle">Vehicle Export Inquiry</option>
-                  <option value="shipping">Shipping & Logistics</option>
-                  <option value="other">Other</option>
+                  <option value="" data-i18n="selectSubject">Select a subject</option>
+                  <option value="general" data-i18n="generalInquiry">General Inquiry</option>
+                  <option value="parts" data-i18n="partsInquiry">Auto Parts Inquiry</option>
+                  <option value="vehicle" data-i18n="vehicleInquiry">Vehicle Export Inquiry</option>
+                  <option value="shipping" data-i18n="shippingLogistics">Shipping & Logistics</option>
+                  <option value="other" data-i18n="other">Other</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label for="message">Message *</label>
+                <label for="message" data-i18n="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
               </div>
 
-              <button type="submit" class="submit-btn">Send Message</button>
+              <button type="submit" class="submit-btn" data-i18n="sendMessageBtn">Send Message</button>
             </form>
           </div>
 
           <!-- Contact Information -->
           <div class="contact-info">
-            <h2>Contact Information</h2>
+            <h2 data-i18n="contactInfo">Contact Information</h2>
 
             <div class="info-item">
-              <h3>📍 Address</h3>
+              <h3>📍 <span data-i18n="address">Address</span></h3>
               <p>Shichiminakano 198-2, Imizu City<br>Toyama-ken, 933-0253<br>JAPAN</p>
             </div>
 
             <div class="info-item">
-              <h3>📞 Phone</h3>
+              <h3>📞 <span data-i18n="phone">Phone</span></h3>
               <p><a href="tel:+819030528856">+81-90-3052-8856</a></p>
             </div>
 
             <div class="info-item">
-              <h3>📧 Email</h3>
+              <h3>📧 <span data-i18n="email">Email</span></h3>
               <p><a href="mailto:rashidjap@yahoo.com">rashidjap@yahoo.com</a></p>
             </div>
 
             <div class="info-item">
-              <h3>🕒 Business Hours</h3>
+              <h3>🕒 <span data-i18n="businessHours">Business Hours</span></h3>
               <p>Monday - Friday: 9:00 AM - 6:00 PM JST<br>Saturday & Sunday: Closed</p>
             </div>
 
             <div class="info-item">
-              <h3>🌐 Languages</h3>
+              <h3>🌐 <span data-i18n="languages">Languages</span></h3>
               <p>English, Japanese, Russian, Urdu, Pashto</p>
             </div>
 
             <div class="info-item">
-              <h3>📱 Social Media</h3>
+              <h3>📱 <span data-i18n="socialMedia">Social Media</span></h3>
               <p>
                 <a href="https://www.facebook.com/japantrektoyama" target="_blank" rel="noopener">Facebook</a><br>
                 <a href="https://www.instagram.com/japantrek.co.jp" target="_blank" rel="noopener">Instagram</a>
@@ -380,6 +380,7 @@
     </div>
   </footer>
 
+<script src="./i18n.js"></script>
 </body>
 <script type="text/javascript" src="./assets/js/script_ver%3D1670554007.js" id="my-script-js"></script>
 </html>

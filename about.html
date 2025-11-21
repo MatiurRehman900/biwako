@@ -175,17 +175,17 @@
       </div>
     </a>
     <div class="flex flex-col justify-center items-center">
-      <h1 class="font-semibold text-center">Language</h1>
+      <h1 class="font-semibold text-center" data-i18n="language">Language</h1>
       <div class="flex gap-4">
-        <div class="cursor-pointer text-center">
+        <div class="cursor-pointer text-center" data-lang="en">
           <span class="fi fi-us w-10 h-10 rounded-full border border-gray-400"></span>
           <p class="font-semibold text-sm">English</p>
         </div>
-        <div class="cursor-pointer text-center">
+        <div class="cursor-pointer text-center" data-lang="ru">
           <span class="fi fi-ru w-10 h-10 rounded-full border border-gray-400"></span>
           <p class="font-semibold text-sm">Русский</p>
         </div>
-        <div class="cursor-pointer text-center">
+        <div class="cursor-pointer text-center" data-lang="ja">
           <span class="fi fi-jp w-10 h-10 rounded-full border border-gray-400"></span>
           <p class="font-semibold text-sm">日本語</p>
         </div>
@@ -198,18 +198,18 @@
         <nav class="_pc">
           <ul class="header__nav">
             <li class="subNav--hover">
-              <a href="/"><i class="fas fa-home mr-2"></i>Home</a>
+              <a href="/"><i class="fas fa-home mr-2"></i><span data-i18n="home">Home</span></a>
             </li>
 
             <li class="subNav--hover">
-              <a href="about.html" class="bg-primary"><i class="fas fa-building" style="margin-right: 8px;"></i>Company Information</a>
+              <a href="about.html" class="bg-primary"><i class="fas fa-building" style="margin-right: 8px;"></i><span data-i18n="companyInfo">Company Information</span></a>
             </li>
             <li class="subNav--hover">
-              <a href="business-flow.html"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i>Business
-                Flow</a>
+              <a href="business-flow.html"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i><span data-i18n="businessFlow">Business
+                Flow</span></a>
             </li>
             <li class="subNav--hover">
-              <a href="contact.html"><i class="fas fa-envelope" style="margin-right: 8px;"></i>Contact Us</a>
+              <a href="contact.html"><i class="fas fa-envelope" style="margin-right: 8px;"></i><span data-i18n="contactUs">Contact Us</span></a>
             </li>
           </ul>
         </nav>
@@ -238,16 +238,16 @@
                 </ul>
               </li> -->
               <li class="drawer__item">
-                <a href="index.html" class="drawer__link">Home</a>
+                <a href="index.html" class="drawer__link" data-i18n="home">Home</a>
               </li>
               <li class="drawer__item">
-                <a href="about.html" class="drawer__link">Company Information</a>
+                <a href="about.html" class="drawer__link" data-i18n="companyInfo">Company Information</a>
               </li>
               <li class="drawer__item">
-                <a href="business-flow.html" class="drawer__link">Business Flow</a>
+                <a href="business-flow.html" class="drawer__link" data-i18n="businessFlow">Business Flow</a>
               </li>
               <li class="drawer__item">
-                <a href="contact.html" class="drawer__link">Contact Us</a>
+                <a href="contact.html" class="drawer__link" data-i18n="contactUs">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -261,8 +261,8 @@
     <!-- Hero Section -->
     <section class="flow-hero">
       <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        <h1>Company Information</h1>
-        <p>Over two decades of excellence in automotive parts export</p>
+        <h1 data-i18n="aboutTitle">Company Information</h1>
+        <p data-i18n="aboutSubtitle">Over two decades of excellence in automotive parts export</p>
       </div>
     </section>
 
@@ -275,10 +275,10 @@
           <p>We are a <strong>multilingual team</strong> speaking English, Japanese, Russian, Urdu, and Pashto, enabling us to serve a diverse international customer base effectively.</p>
         </div>
 
-        <h2 class="section-title">Why Choose Us</h2>
+        <h2 class="section-title" data-i18n="whyChooseUs">Why Choose Us</h2>
 
         <div class="info-card animate-slide-left">
-          <h3><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>Strategic Location</h3>
+          <h3><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i><span data-i18n="strategicLocation">Strategic Location</span></h3>
           <p>Our yard is located in Toyama Prefecture, close to three major ports. We are:</p>
           <ul>
             <li>Only 5 minutes from Toyama Shinko Port</li>
@@ -291,7 +291,7 @@
         </div>
 
         <div class="info-card animate-slide-right">
-          <h3><i class="fas fa-link" style="margin-right: 10px;"></i>Strong Supply Chain</h3>
+          <h3><i class="fas fa-link" style="margin-right: 10px;"></i><span data-i18n="strongSupplyChain">Strong Supply Chain</span></h3>
           <p>Thanks to our long-term relationships with local car dealers and our memberships in major Japanese auto
             auctions, we maintain a strong and reliable supply chain. We can source all types of vehicles, including:
           </p>
@@ -305,7 +305,7 @@
         </div>
 
         <div class="info-card animate-slide-left">
-          <h3><i class="fas fa-language" style="margin-right: 10px;"></i>Multilingual Staff</h3>
+          <h3><i class="fas fa-language" style="margin-right: 10px;"></i><span data-i18n="multilingualStaff">Multilingual Staff</span></h3>
           <p>Our team consists of multilingual professionals who can communicate seamlessly with customers from
             different regions. We speak: <strong>English, Japanese, Russian, Urdu, and Pashto</strong>.</p>
           <p>This helps us provide better support, clear communication, and smooth coordination throughout the buying
@@ -313,7 +313,7 @@
         </div>
 
         <div class="info-card animate-slide-right">
-          <h3><i class="fas fa-certificate" style="margin-right: 10px;"></i>Licensed & Authorized</h3>
+          <h3><i class="fas fa-certificate" style="margin-right: 10px;"></i><span data-i18n="licensedAuthorized">Licensed & Authorized</span></h3>
           <p>We are a fully licensed and registered exporter in Japan. Our official licenses and certifications allow us
             to:</p>
           <ul>
@@ -327,18 +327,18 @@
         </div>
 
         <div class="info-card animate-slide-left">
-          <h3><i class="fas fa-users" style="margin-right: 10px;"></i>Professional Team</h3>
+          <h3><i class="fas fa-users" style="margin-right: 10px;"></i><span data-i18n="professionalTeam">Professional Team</span></h3>
           <div class="team-grid">
             <div class="team-card">
-              <h4>Japanese Staff</h4>
+              <h4 data-i18n="japaneseStaff">Japanese Staff</h4>
               <p>Our Japanese staff efficiently handle local buying of cars, parts, machinery, and trucks.</p>
             </div>
             <div class="team-card">
-              <h4>Multinational Staff</h4>
+              <h4 data-i18n="multinationalStaff">Multinational Staff</h4>
               <p>Multinational team dealing with international client.</p>
             </div>
             <div class="team-card">
-              <h4>Dispentaling Staff</h4>
+              <h4 data-i18n="dismantalingStaff">Dispentaling Staff</h4>
               <p>We have hired 4 to 5 team members, each with over 10 years of experience, to ensure that all parts are
                 carefully dismantled and delivered to you without any damage.</p>
             </div>
@@ -359,48 +359,48 @@
           <ul class="footer__nav">
             <li class="footer__item">
               <div class="footer__head _has-child">
-                <a href="" class="footer__link"><span>Services</span></a>
+                <a href="" class="footer__link"><span data-i18n="services">Services</span></a>
                 <div class="acd-btn _tb-sp"></div>
               </div>
               <ul class="child-menu acd-body">
                 <li class="child-menu__item">
-                  <a class="child-menu__link"><span>Vehicle
+                  <a class="child-menu__link"><span data-i18n="vehicleProcurement">Vehicle
                       Procurement</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a class="child-menu__link"><span>Car
+                  <a class="child-menu__link"><span data-i18n="carDismantling">Car
                       Dismantling</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a class="child-menu__link"><span>Part
+                  <a class="child-menu__link"><span data-i18n="partStorage">Part
                       Storage</span></a>
                 </li>
                 <li class="child-menu__item">
-                  <a class="child-menu__link"><span>Container
+                  <a class="child-menu__link"><span data-i18n="containerShipping">Container
                       Shipping</span></a>
                 </li>
               </ul>
             </li>
             <li class="footer__item">
-              <a href="https://assets/office" class="footer__link"><span>Office Locations</span></a>
+              <a href="https://assets/office" class="footer__link"><span data-i18n="officeLocations">Office Locations</span></a>
             </li>
             <li class="footer__item">
               <div class="footer__head">
                 <a href="https://assets/contact" class="footer__link">
-                  <span>Contact Us</span>
+                  <span data-i18n="contactUs">Contact Us</span>
                 </a>
               </div>
             </li>
           </ul>
           <div class="footer__contact">
-            <h3>Contact Information</h3>
-            <p><strong>Address:</strong> Shichiminakano 198-2, Imizu City, Toyama-ken, 933-0253, JAPAN</p>
-            <p><strong>Phone:</strong> +81-90-3052-8856</p>
-            <p><strong>Email:</strong> <a href="mailto:rashidjap@yahoo.com">rashidjap@yahoo.com</a></p>
-            <p><strong>Business Hours:</strong> Monday-Friday 9:00 AM - 6:00 PM JST</p>
+            <h3 data-i18n="contactInfo">Contact Information</h3>
+            <p><strong data-i18n="address">Address:</strong> Shichiminakano 198-2, Imizu City, Toyama-ken, 933-0253, JAPAN</p>
+            <p><strong data-i18n="phone">Phone:</strong> +81-90-3052-8856</p>
+            <p><strong data-i18n="email">Email:</strong> <a href="mailto:rashidjap@yahoo.com">rashidjap@yahoo.com</a></p>
+            <p><strong data-i18n="businessHours">Business Hours:</strong> <span data-i18n="businessHoursValue">Monday-Friday 9:00 AM - 6:00 PM JST</span></p>
           </div>
           <div class="footer__social">
-            <h3>Social Media</h3>
+            <h3 data-i18n="socialMedia">Social Media</h3>
             <ul>
               <li><a href="https://www.facebook.com/japantrektoyama" target="_blank" rel="noopener">Facebook</a></li>
               <li><a href="https://www.instagram.com/japantrek.co.jp" target="_blank" rel="noopener">Instagram</a></li>
@@ -422,9 +422,9 @@
         <div class="footer__wrap">
           <div class="_pc">
             <ul class="footer__sub-nav">
-              <li><a href="https://assets/sitemap">Sitemap</a></li>
-              <li><a href="https://assets/info_security">Information Security Policy</a></li>
-              <li><a href="https://assets/info_security#privacy-policy">Privacy Policy</a></li>
+              <li><a href="https://assets/sitemap" data-i18n="sitemap">Sitemap</a></li>
+              <li><a href="https://assets/info_security" data-i18n="infoSecurity">Information Security Policy</a></li>
+              <li><a href="https://assets/info_security#privacy-policy" data-i18n="privacyPolicy">Privacy Policy</a></li>
             </ul>
           </div>
           <p class="footer__copy">© 2022
@@ -457,6 +457,7 @@
       observer.observe(el);
     });
   </script>
+<script src="./i18n.js"></script>
 </body>
 <script type="text/javascript" src="./assets/js/script_ver%3D1670554007.js" id="my-script-js"></script>
 </html>
