@@ -5,7 +5,7 @@ const translations = {
     companyInfo: "Company Information",
     businessFlow: "Business Flow",
     contactUs: "Contact Us",
-    title: "Biwako International: Your Trusted Partner for Japanese Cars & Parts",
+    title: "Biwako International Trading: Your Trusted Export Partner for Japanese Used Cars & Used Parts",
     description1: "The importance of used Japanese auto parts lies in their high quality, reliability, and availability, driven by a culture of car maintenance and low mileage on vehicles. Sourcing these parts from Japan provides access to a wide selection of JDM (Japanese Domestic Market) performance and specialty components, often at competitive prices, and from vehicles that have been meticulously maintained. This makes them a superior option for JDM enthusiasts and for owners of Japanese cars in regions where new parts may be scarce or expensive.",
     description2: "Biwako International Trading Japan offer full door-to-door export services for both complete cars and a wide range of Japanese used auto parts, including sourcing, dismantling, container loading, and shipping to your desired location worldwide. These services typically handle all Japanese export procedures, documentation, and shipping arrangements, simplifying the process for international buyers",
     services: "Services",
