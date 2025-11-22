@@ -27,11 +27,13 @@
       padding: 80px 0;
       text-align: center;
     }
+
     .flow-hero h1 {
       font-size: 3rem;
       font-weight: 900;
       margin-bottom: 20px;
     }
+
     .flow-hero p {
       font-size: 1.2rem;
       max-width: 700px;
@@ -78,15 +80,17 @@
             </li>
 
             <li class="subNav--hover">
-              <a href="about.html"><i class="fas fa-building" style="margin-right: 8px;"></i><span data-i18n="companyInfo">Company Information</span></a>
+              <a href="about.html"><i class="fas fa-building" style="margin-right: 8px;"></i><span
+                  data-i18n="companyInfo">Company Information</span></a>
             </li>
             <li class="subNav--hover">
-              <a href="business-flow.html" class="bg-primary"><i class="fas fa-project-diagram" style="margin-right: 8px;"></i><span data-i18n="businessFlow">Business
-                Flow</span></a>
+              <a href="business-flow.html" class="bg-primary"><i class="fas fa-project-diagram"
+                  style="margin-right: 8px;"></i><span data-i18n="businessFlow">Business
+                  Flow</span></a>
             </li>
             <li class="subNav--hover">
-              <a href="contact.html"><i class="fas fa-envelope"
-                  style="margin-right: 8px;"></i><span data-i18n="contactUs">Contact Us</span></a>
+              <a href="contact.html"><i class="fas fa-envelope" style="margin-right: 8px;"></i><span
+                  data-i18n="contactUs">Contact Us</span></a>
             </li>
           </ul>
         </nav>
@@ -139,7 +143,8 @@
     <section class="flow-hero">
       <div class="container">
         <h1 data-i18n="exportBusinessFlow">Export Business Flow</h1>
-        <p data-i18n="flowSubtitle">Our streamlined process ensures quality, efficiency, and timely delivery from order to shipment</p>
+        <p data-i18n="flowSubtitle">Our streamlined process ensures quality, efficiency, and timely delivery from order
+          to shipment</p>
       </div>
     </section>
 
@@ -147,89 +152,94 @@
     <section class="flow-content py-20 bg-gradient-to-b from-gray-50 to-white">
       <div class="container mx-auto px-4 max-w-7xl">
         <div class="flow-steps space-y-16">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="flow-step step-card-1 animate-slide-left">
-              <div class="flow-step-number step-number-1"><span>1</span></div>
-              <h3 data-i18n="receivingOrders">Receiving Orders</h3>
-              <p data-i18n="receivingOrdersDesc">We get customer orders and check all details to make sure everything is correct.</p>
+          <!-- Step 1 → Step 2 -->
+          <div class="flex flex-col lg:flex-row items-center gap-6">
+            <div class="flow-step step-card-1 animate-slide-left flex-1">
+              <img src="./assets/img/bussniess-flow/recieving-order.jpeg" alt="Receiving Orders"
+                class="w-full md:max-w-[200px] rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+              <div>
+                <div class="flow-step-number step-number-1"><span>1</span></div>
+                <h3 data-i18n="receivingOrders">Receiving Orders</h3>
+                <p data-i18n="receivingOrdersDesc">We get customer orders and check all details to make sure everything
+                  is correct.</p>
+              </div>
             </div>
-            <div class="flex justify-center animate-slide-right">
-              <img src="./assets/img/bussniess-flow/recieving-order.jpeg" alt="Receiving Orders" class="w-full max-w-sm rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+            <div class="text-5xl text-primary">
+              <span class="hidden md:inline">→</span>
+              <span class="md:hidden">↓</span>
+            </div>
+            <div class="flow-step step-card-2 animate-slide-right flex-1">
+              <img src="./assets/img/bussniess-flow/arranging-parts.jpeg" alt="Arranging Cars & Parts"
+                class="w-full md:max-w-[200px] rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+              <div>
+                <div class="flow-step-number step-number-2"><span>2</span></div>
+                <h3 data-i18n="arrangingCars">Arranging Cars & Parts</h3>
+                <p data-i18n="arrangingCarsDesc">We collect the required cars and auto parts from auctions, suppliers,
+                  or our stock.</p>
+              </div>
             </div>
           </div>
 
-          <div class="flex justify-center">
+          <!-- <div class="flex justify-center">
             <div class="text-5xl text-primary animate-bounce">↓</div>
+          </div> -->
+
+          <!-- Step 3 → Step 4 -->
+          <div class="flex flex-col lg:flex-row items-center gap-6">
+            <div class="flow-step step-card-3 animate-slide-left flex-1">
+              <img src="./assets/img/bussniess-flow/cutting-dispentaling.jpeg" alt="Dismantling & Cutting"
+                class="w-full md:max-w-[200px] rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+              <div>
+                <div class="flow-step-number step-number-3"><span>3</span></div>
+                <h3 data-i18n="dismantling">Dismantling & Cutting</h3>
+                <p data-i18n="dismantlingDesc">Our skilled team carefully dismantles cars and performs half-cut, nose-cut,
+                  or full disassembly as needed.</p>
+              </div>
+            </div>
+            <div class="text-5xl text-primary">
+              <span class="hidden md:inline">→</span>
+              <span class="md:hidden">↓</span>
+            </div>
+            <div class="flow-step step-card-4 animate-slide-right flex-1">
+              <img src="./assets/img/bussniess-flow/packing.jpeg" alt="Packing"
+                class="w-full md:max-w-[200px] rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+              <div>
+                <div class="flow-step-number step-number-4"><span>4</span></div>
+                <h3 data-i18n="packing">Packing</h3>
+                <p data-i18n="packingDesc">All parts are packed safely to reach the customer in perfect condition.</p>
+              </div>
+            </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="flex justify-center md:order-1 animate-slide-left">
-              <img src="./assets/img/bussniess-flow/arranging-parts.jpeg" alt="Arranging Cars & Parts" class="w-full max-w-sm rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
-            </div>
-            <div class="flow-step step-card-2 md:order-2 animate-slide-right">
-              <div class="flow-step-number step-number-2"><span>2</span></div>
-              <h3 data-i18n="arrangingCars">Arranging Cars & Parts</h3>
-              <p data-i18n="arrangingCarsDesc">We collect the required cars and auto parts from auctions, suppliers, or our stock.</p>
-            </div>
-          </div>
-
-          <div class="flex justify-center">
+          <!-- <div class="flex justify-center">
             <div class="text-5xl text-primary animate-bounce">↓</div>
-          </div>
+          </div> -->
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="flow-step step-card-3 animate-slide-left">
-              <div class="flow-step-number step-number-3"><span>3</span></div>
-              <h3 data-i18n="dismantling">Dismantling & Cutting</h3>
-              <p data-i18n="dismantlingDesc">Our skilled team carefully dismantles cars and performs half-cut, nose-cut, or full disassembly as needed.</p>
+          <!-- Step 5 → Step 6 -->
+          <div class="flex flex-col lg:flex-row items-center gap-6">
+            <div class="flow-step step-card-5 animate-slide-left flex-1">
+              <img src="./assets/img/bussniess-flow/container-laoding.jpeg" alt="Container Loading"
+                class="w-full md:max-w-[200px] rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+              <div>
+                <div class="flow-step-number step-number-5"><span>5</span></div>
+                <h3 data-i18n="containerLoading">Container Loading</h3>
+                <p data-i18n="containerLoadingDesc">We load cars and parts into containers using methods like full car
+                  loading, CKD, rack & tack, or bulk parts, depending on the customer's needs.</p>
+              </div>
             </div>
-            <div class="flex justify-center animate-slide-right">
-              <img src="./assets/img/bussniess-flow/cutting-dispentaling.jpeg" alt="Dismantling & Cutting" class="w-full max-w-sm rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+            <div class="text-5xl text-primary">
+              <span class="hidden md:inline">→</span>
+              <span class="md:hidden">↓</span>
             </div>
-          </div>
-
-          <div class="flex justify-center">
-            <div class="text-5xl text-primary animate-bounce">↓</div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="flex justify-center md:order-1 animate-slide-left">
-              <img src="./assets/img/bussniess-flow/packing.jpeg" alt="Packing" class="w-full max-w-sm rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
-            </div>
-            <div class="flow-step step-card-4 md:order-2 animate-slide-right">
-              <div class="flow-step-number step-number-4"><span>4</span></div>
-              <h3 data-i18n="packing">Packing</h3>
-              <p data-i18n="packingDesc">All parts are packed safely to reach the customer in perfect condition.</p>
-            </div>
-          </div>
-
-          <div class="flex justify-center">
-            <div class="text-5xl text-primary animate-bounce">↓</div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="flow-step step-card-5 animate-slide-left">
-              <div class="flow-step-number step-number-5"><span>5</span></div>
-              <h3 data-i18n="containerLoading">Container Loading</h3>
-              <p data-i18n="containerLoadingDesc">We load cars and parts into containers using methods like full car loading, CKD, rack & tack, or bulk parts, depending on the customer's needs.</p>
-            </div>
-            <div class="flex justify-center animate-slide-right">
-              <img src="./assets/img/bussniess-flow/container-laoding.jpeg" alt="Container Loading" class="w-full max-w-sm rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
-            </div>
-          </div>
-
-          <div class="flex justify-center">
-            <div class="text-5xl text-primary animate-bounce">↓</div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="flex justify-center md:order-1 animate-slide-left">
-              <img src="./assets/img/bussniess-flow/shipment.jpeg" alt="Shipment" class="w-full max-w-sm rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
-            </div>
-            <div class="flow-step step-card-6 md:order-2 animate-slide-right">
-              <div class="flow-step-number step-number-6"><span>6</span></div>
-              <h3 data-i18n="shipment">Shipment</h3>
-              <p data-i18n="shipmentDesc">We handle shipping and all documentation, making sure the container reaches the customer safely and on time.</p>
+            <div class="flow-step step-card-6 animate-slide-right flex-1">
+              <img src="./assets/img/bussniess-flow/shipment.jpeg" alt="Shipment"
+                class="w-full md:max-w-[200px] rounded-2xl shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-500 border-4 border-white">
+              <div>
+                <div class="flow-step-number step-number-6"><span>6</span></div>
+                <h3 data-i18n="shipment">Shipment</h3>
+                <p data-i18n="shipmentDesc">We handle shipping and all documentation, making sure the container reaches
+                  the customer safely and on time.</p>
+              </div>
             </div>
           </div>
 
@@ -237,8 +247,8 @@
       </div>
     </section>
 
-        </div>
-      </div>
+    </div>
+    </div>
     </section>
 
   </main>
@@ -296,7 +306,8 @@
               </ul>
             </li>
             <li class="footer__item">
-              <a href="https://assets/office" class="footer__link"><span data-i18n="officeLocations">Office Locations</span></a>
+              <a href="https://assets/office" class="footer__link"><span data-i18n="officeLocations">Office
+                  Locations</span></a>
             </li>
             <li class="footer__item">
               <div class="footer__head">
@@ -308,10 +319,13 @@
           </ul>
           <div class="footer__contact">
             <h3 data-i18n="contactInfo">Contact Information</h3>
-            <p><strong data-i18n="address">Address:</strong> Shichiminakano 198-2, Imizu City, Toyama-ken, 933-0253, JAPAN</p>
+            <p><strong data-i18n="address">Address:</strong> Shichiminakano 198-2, Imizu City, Toyama-ken, 933-0253,
+              JAPAN</p>
             <p><strong data-i18n="phone">Phone:</strong> +81-90-3052-8856</p>
-            <p><strong data-i18n="email">Email:</strong> <a href="mailto:rashidjap@yahoo.com">rashidjap@yahoo.com</a></p>
-            <p><strong data-i18n="businessHours">Business Hours:</strong> <span data-i18n="businessHoursValue">Monday-Friday 9:00 AM - 6:00 PM JST</span></p>
+            <p><strong data-i18n="email">Email:</strong> <a href="mailto:rashidjap@yahoo.com">rashidjap@yahoo.com</a>
+            </p>
+            <p><strong data-i18n="businessHours">Business Hours:</strong> <span
+                data-i18n="businessHoursValue">Monday-Friday 9:00 AM - 6:00 PM JST</span></p>
           </div>
           <div class="footer__social">
             <h3 data-i18n="socialMedia">Social Media</h3>
@@ -338,7 +352,8 @@
             <ul class="footer__sub-nav">
               <li><a href="https://assets/sitemap" data-i18n="sitemap">Sitemap</a></li>
               <li><a href="https://assets/info_security" data-i18n="infoSecurity">Information Security Policy</a></li>
-              <li><a href="https://assets/info_security#privacy-policy" data-i18n="privacyPolicy">Privacy Policy</a></li>
+              <li><a href="https://assets/info_security#privacy-policy" data-i18n="privacyPolicy">Privacy Policy</a>
+              </li>
             </ul>
           </div>
           <p class="footer__copy">© 2022
@@ -349,7 +364,7 @@
       </div>
     </div>
   </footer>
-<script src="./i18n.js"></script>
+  <script src="./i18n.js"></script>
 </body>
 <script type="text/javascript" src="./assets/js/script_ver%3D1670554007.js" id="my-script-js"></script>
 
