@@ -9444,3 +9444,18 @@ cont05__txt01 .page-sustainability .cont05__txt01 {
 .hp_h18 {
     height: 18px
 }
+ .whatsapp-link {
+      color: #25D366;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .whatsapp-link i {
+      font-size: 1.5rem;
+    }
+
+    .whatsapp-link:hover {
+      color: #128C7E;
+    }
